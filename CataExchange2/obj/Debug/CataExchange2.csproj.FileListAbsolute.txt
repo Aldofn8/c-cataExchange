@@ -196,3 +196,6 @@ C:\Users\coder\Documents\Nueva carpeta\c-cataExchange\CataExchange2\obj\Debug\Ca
 C:\Users\coder\Documents\Nueva carpeta\c-cataExchange\CataExchange2\obj\Debug\CataExchange2.csproj.CopyComplete
 C:\Users\coder\Documents\Nueva carpeta\c-cataExchange\CataExchange2\obj\Debug\CataExchange2.dll
 C:\Users\coder\Documents\Nueva carpeta\c-cataExchange\CataExchange2\obj\Debug\CataExchange2.pdb
+C:\Users\coder\Documents\Nueva carpeta\c-cataExchange\CataExchange2\bin\System.Web.Cors.dll
+C:\Users\coder\Documents\Nueva carpeta\c-cataExchange\CataExchange2\bin\System.Web.Http.Cors.dll
+C:\Users\coder\Documents\Nueva carpeta\c-cataExchange\CataExchange2\bin\System.Web.Http.Cors.xml

@@ -11,7 +11,8 @@ namespace CataExchange2.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Linq;
+
     public partial class operacionesPesos
     {
         public int idOperacionesP { get; set; }
@@ -20,5 +21,17 @@ namespace CataExchange2.Models
         public decimal importe { get; set; }
     
         public virtual cuentaPesos cuentaPesos { get; set; }
+
+        public List<string> ListarOperacionesPesos()
+        {
+            var listaOperacionesPesos = new List<operacionesPesos>
+            {
+                new operacionesPesos {idOperacionesP = 1, idCuentaPesos = 1, tipoOperacion = "envia", importe = 1}
+            };
+            var listaOP = listaOperacionesPesos.Select(x => x.tipoOperacion).ToList();
+
+            return listaOP;
+        }
+
     }
 }

@@ -11,7 +11,8 @@ namespace CataExchange2.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Linq;
+
     public partial class OperaCripto
     {
         public int idOperaCripto { get; set; }
@@ -24,5 +25,16 @@ namespace CataExchange2.Models
     
         public virtual Billetera Billetera { get; set; }
         public virtual criptoMonedas criptoMonedas { get; set; }
+
+        public List<string> ListarOperaCripto()
+        {
+            var listaOperaCripto = new List<OperaCripto>
+            {
+                new OperaCripto {idOperaCripto = 1, idBilletera = 1, idCriptoMoneda = 1, cantidadCripto = 1, tipoOperacion = "envia/deposita", fechaHora = DateTime.Today, importe = 1 }
+            };
+            var listaOperaC = listaOperaCripto.Select(x => x.tipoOperacion).ToList();
+
+            return listaOperaC;
+        }
     }
 }
