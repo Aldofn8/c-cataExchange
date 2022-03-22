@@ -1,4 +1,5 @@
 ﻿using CataExchange2.App_Start;
+using CataExchange2.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace CataExchange2
 
             // Rutas de API web
             config.MapHttpAttributeRoutes();
+
+            config.MessageHandlers.Add(new TokenValidationHandler()); 
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

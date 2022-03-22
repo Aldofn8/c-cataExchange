@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using CataExchange2.Models;
+using System.ComponentModel.DataAnnotations; 
 
 namespace CataExchange2.Controllers
 {
@@ -21,6 +22,7 @@ namespace CataExchange2.Controllers
         }
 
         // GET api/<controller>
+        //[Authorize]
         [HttpGet]
         public List<Usuarios> ListarUsuario()
         {
@@ -82,7 +84,10 @@ namespace CataExchange2.Controllers
 
     public class Login
     {
+        [Required]
         public string email { get; set; }
+
+        [Required]
         public string clave { get; set; }
     }
 }
