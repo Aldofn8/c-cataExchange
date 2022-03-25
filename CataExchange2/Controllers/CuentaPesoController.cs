@@ -27,14 +27,28 @@ namespace CataExchange2.Controllers
         }
 
         // POST: api/CuentaPeso
-        public void Post([FromBody]string value)
+        public void Post([FromBody]cuentaPesos oCuentaPeso)
         {
+            if (!ModelState.IsValid)
+            {
+                return;
+            }
+
+            db.cuentaPesos.Add(oCuentaPeso);
+            db.SaveChanges();
         }
 
         // PUT: api/CuentaPeso/5
 
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody]cuentaPesos oCuentaPeso)
         {
+            cuentaPesos oCuentaPesoAModificar = db.cuentaPesos.Where(a => a.idUsuario == id).FirstOrDefault();
+            oCuentaPesoAModificar.saldo = oCuentaPeso.saldo;
+
+
+            db.cuentaPesos.Attach(db.cuentaPesos.Single(a => a.idUsuario == id));
+            db.Entry(oCuentaPesoAModificar).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
         }
 
         // DELETE: api/CuentaPeso/5

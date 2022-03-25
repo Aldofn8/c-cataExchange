@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using CataExchange2.Models;
-using System.ComponentModel.DataAnnotations; 
+using System.ComponentModel.DataAnnotations;
 
 namespace CataExchange2.Controllers
 {
@@ -46,7 +46,7 @@ namespace CataExchange2.Controllers
                 return;
             }
 
-            db.Usuarios.Add(oUsuario);
+            db.Usuarios.Add(oUsuario);            
             db.SaveChanges();
         }
 

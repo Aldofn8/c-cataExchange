@@ -26,8 +26,15 @@ namespace CataExchange2.Controllers
         }
 
         // POST: api/EnviaDeposita
-        public void Post([FromBody]string value)
+        public void Post([FromBody]enviaDeposita oEnviaDeposita)
         {
+            if (!ModelState.IsValid)
+            {
+                return;
+            }
+
+            db.enviaDeposita.Add(oEnviaDeposita);
+            db.SaveChanges();
         }
 
         // PUT: api/EnviaDeposita/5

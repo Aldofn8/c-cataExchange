@@ -39,8 +39,15 @@ namespace CataExchange2.Controllers
         }
 
         // PUT: api/Billetera/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, string nombreMoneda, [FromBody]Billetera oBilleteraNuevo)
         {
+            Billetera oBilleteraAModificar = db.Billetera.Where(a => a.idUsuario == id && a.nombreCripto == nombreMoneda).FirstOrDefault();
+
+            oBilleteraAModificar.cantidadCripto = oBilleteraNuevo.cantidadCripto;
+            
+            db.Billetera.Attach(db.Billetera.Single(a => a.idUsuario == id && a.nombreCripto == nombreMoneda));
+            db.Entry(oBilleteraAModificar).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
         }
 
         // DELETE: api/Billetera/5

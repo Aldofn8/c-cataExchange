@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\claud\OneDrive\Escritorio\AOEU\c-cataExchange\CataExchange2\bin\app.publish\</_PublishTargetUrl>
-    <History>True|2022-03-22T19:51:01.0902800Z;</History>
+    <History>True|2022-03-25T05:14:24.9747901Z;True|2022-03-23T02:43:12.4608119-03:00;True|2022-03-22T16:51:01.0902800-03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Areas/HelpPage/HelpPage.css">
@@ -78,16 +78,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/21/2022 11:08:42</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>03/22/2022 16:50:55</publishTime>
+      <publishTime>03/25/2022 02:14:15</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>03/22/2022 16:50:54</publishTime>
+      <publishTime>03/25/2022 02:14:15</publishTime>
     </File>
     <File Include="bin/CataExchange2.dll">
-      <publishTime>03/22/2022 16:50:36</publishTime>
+      <publishTime>03/25/2022 02:13:53</publishTime>
     </File>
     <File Include="bin/CataExchange2.pdb">
-      <publishTime>03/22/2022 16:50:36</publishTime>
+      <publishTime>03/25/2022 02:13:53</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/21/2022 11:08:42</publishTime>
@@ -381,7 +381,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/21/2022 11:08:40</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>03/22/2022 16:50:40</publishTime>
+      <publishTime>03/25/2022 02:13:59</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>03/21/2022 11:08:40</publishTime>
@@ -426,7 +426,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/21/2022 11:08:40</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/22/2022 16:50:38</publishTime>
+      <publishTime>03/22/2022 17:02:58</publishTime>
     </File>
   </ItemGroup>
 </Project>
